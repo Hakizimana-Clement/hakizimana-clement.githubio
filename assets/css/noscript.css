@@ -1,0 +1,39 @@
+@import url(font-awesome.min.css);
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Wrapper */
+
+#wrapper {
+  background-color: #750e00;
+  background-image: url("../../images/overlay.png"),
+    linear-gradient(0deg, rgba(192, 10, 10, 0rgba (180, 0, 0, 0.1) 0.1)),
+    url("../../images/bg.jpg");
+  /* background-image: url("https://images.unsplash.com/photo-1586716905784-b41bc0610e1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VuJTIwc2V0JTIwc2t5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"); */
+  background-size: auto, auto, 100% auto;
+  background-position: center, center, top center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+}
+
+#wrapper.fade-in:before {
+  display: none;
+}
+
+/* Intro */
+
+body.is-preload #intro {
+  opacity: 1;
+}
+
+body.is-preload #intro:not(.hidden) + #header + #nav {
+  -moz-transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  opacity: 1;
+}
